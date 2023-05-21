@@ -10,6 +10,7 @@ const addPark = r => require.ensure([], () => r(require('@/page/addPark')), 'add
 const addCarOwner = r => require.ensure([], () => r(require('@/page/addCarOwner')), 'addCarOwner');
 const carList = r => require.ensure([], () => r(require('@/page/carList')), 'carList');
 const adminList = r => require.ensure([], () => r(require('@/page/adminList')), 'adminList');
+const parkingGet = r => require.ensure([], () => r(require('@/page/parkingGet')), 'parkingGet');
 const uploadImg = r => require.ensure([], () => r(require('@/page/uploadImg')), 'uploadImg');
 const vueEdit = r => require.ensure([], () => r(require('@/page/vueEdit')), 'vueEdit');
 const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'adminSet');
@@ -45,6 +46,10 @@ const routes = [
 			path: '/adminList',
 			component: adminList,
 			meta: ['车位管理', '车主信息'],
+		},{
+			path: '/parkingGet',
+			component: parkingGet,
+			meta: ['车位管理', '识别空余车位'],
 		},{
 			path: '/uploadImg',
 			component: uploadImg,

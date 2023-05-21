@@ -8,6 +8,7 @@
 						<template slot="title"><i class="el-icon-document"></i>车位管理</template>
 						<el-menu-item index="carList">车位信息</el-menu-item>
 						<el-menu-item index="adminList">车主信息</el-menu-item>
+						<el-menu-item index="parkingGet">识别空余车位</el-menu-item>
 					</el-submenu>
 					<el-submenu index="3">
 						<template slot="title"><i class="el-icon-plus"></i>添加数据</template>
